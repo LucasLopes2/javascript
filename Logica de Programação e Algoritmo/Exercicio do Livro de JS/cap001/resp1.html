@@ -22,8 +22,20 @@ var valorAVista = precoProduto * 0.9;
 var valorParcelado = precoProduto / 3;
 
 alert("Opções de pagamento:\n1. À vista com 10% de desconto: R$" + valorAVista.toFixed(2) + "\n2. Em 3 parcelas de R$" + valorParcelado.toFixed(2));
-  
-        
+   
+    </script>
+
+    <script>
+        var nota1 = parseFloat(prompt("Digite a primeira nota:"));
+
+// Solicita a segunda nota ao usuário
+var nota2 = parseFloat(prompt("Digite a segunda nota:"));
+
+// Calcula a média das notas
+var media = (nota1 + nota2) / 2;
+
+// Exibe a média das notas
+alert("A média das notas é: " + media.toFixed(2));
     </script>
 </body>
 </html>
