@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+   <script>
+    var num1 = Number(prompt("Valor da conta R$: "))
+    var nc = num1 / 3
+    alert("Valor por cliente R$: " + nc)
+   </script>
+    <h1>Exercicio B</h1>
+    <script>
+        var precoProduto = parseFloat(prompt("Digite o preço do produto:"));
+
+// Calcula o valor à vista com desconto de 10%
+var valorAVista = precoProduto * 0.9;
+
+// Calcula o valor em 3 parcelas
+var valorParcelado = precoProduto / 3;
+
+alert("Opções de pagamento:\n1. À vista com 10% de desconto: R$" + valorAVista.toFixed(2) + "\n2. Em 3 parcelas de R$" + valorParcelado.toFixed(2));
+  
+        
+    </script>
+</body>
+</html>
