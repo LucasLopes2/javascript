@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios</title>
+</head>
+<body>
+    <h1>Programa Óla Você!</h1>
+    <form>
+        <p>Nome:
+            <input type="text" id="innome">
+            <input type="submit" value="Mostrar">
+        </p>
+    </form>
+    <h3></h3>
+    <script>
+     const frm = document.querySelector('form');
+const resp = document.querySelector("h3");
+
+frm.addEventListener("submit", (e) => {
+   ; 
+    const Nome = frm.innome.value
+    resp.innerText = `Bem vindo Senhor(a) ${Nome}`;
+    e.preventDefault()
+});
+
+    </script>
+</body>
+</html>
