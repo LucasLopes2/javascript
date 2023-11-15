@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticando JavaScript</title>
+</head>
+<body>
+    <h1>Olá seja Bem-Vindo</h1>
+    <form>
+        <p>
+            Nome:
+            <input type="text" id="nome" autocomplete="off" required>
+        </p>
+        <p>
+            Idade:
+            <input type="text" id="idd" size="1" maxlength="2" required>
+        </p>
+        <input type="submit" value="Mostrar">
+    </form>
+    <h3></h3>
+    <h2></h2>
+
+    <script>
+        var frm = document.querySelector("form")
+        var exibir = document.querySelector("h3")
+        var exi = document.querySelector('h2')
+        frm.addEventListener("submit", (e) => {
+            var nome = frm.nome.value
+            exibir.innerText = `Olá ${nome}`
+            var idd = frm.idd.value
+            exi.innerText = `Tem ${idd} anos`
+            e.preventDefault()
+        })
+    </script>
+</body>
+</html>
