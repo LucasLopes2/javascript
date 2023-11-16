@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+</head>
+<style>
+    div#on{
+        background-color: blue;
+        width: 200px;
+        height: 200px;
+        text-align: center;
+        padding: 10px;
+        font-size: 2em;
+    }
+</style>
+<body>
+    <div id="on" onclick="clique()" onmouseenter="entrar()" onmouseout="sair()">
+        Hello!
+    </div>
+
+    <script>
+        var on = window.document.getElementById('on')
+        function clique(){
+            on.innerText = 'Clicou!'
+            on.style.background = 'red'
+        }
+        function entrar(){
+            on.innerText = "Entrou"
+        }
+        function sair(){
+            on.innerText = 'Saiu'
+            on.style.background = 'blue'
+        }
+    </script>
+</body>
+</html>
