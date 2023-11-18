@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinejs</title>
+</head>
+<body>
+    <h1>CineJS: Filmes em Cartas</h1>
+    <form>
+        <p>Título do Filme:
+            <input type="text" id="titul" required autocomplete="off">
+        </p>
+
+        <p>
+            Duração(min)
+            <input type="number" name="hr" id="induracao">
+        </p>
+        
+            <input type="submit" value="Converter em Horas e Minutos">
+       
+        
+        <h3></h3>
+        <h4></h4>
+    </form>
+    <script>
+      var frm = document.querySelector("form")
+      var res1 = document.querySelector("h3")
+      var res2 = document.querySelector("h4")
+        frm.addEventListener("submit", (e) =>{
+            var titulo = frm.titul.value
+      var duracao = Number(frm.induracao.value)
+        
+    
+      var horas = Math.floor(duracao / 60)
+      var minutos = duracao % 60
+
+      res1.innerText = titulo
+      res2.innerText = `${horas} horas(s) e ${minutos} minutos(s)`
+      
+      e.preventDefault()
+    })
+    </script>
+</body>
+</html>
