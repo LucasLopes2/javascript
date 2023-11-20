@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante</title>
+</head>
+<body>
+   <h1>Restaurante JS</h1> 
+   <form>
+    <p>
+        Buffer por Quilo R$:
+        <input type="number" name="quilo" id="kg" min="0" step="0.01" size="10">
+    </p>
+
+    <p>
+        Consumo do Cliente (gr): 
+        <input type="number" name="gr" id="gramas" required min="0" size="5">
+    </p>
+
+    <input type="submit" value="Calcular Preço">
+
+    <h3>valor</h3>
+   </form>
+
+   <script>
+    var frm = document.querySelector("form")
+    var saida = document.querySelector("h3")
+
+    frm.addEventListener('submit', (e) =>{
+        var kg = frm.kg.value
+        var gramas = Number(frm.gramas.value)
+
+        var valor = (kg / 1000) * gramas
+        saida.innerText = `Valor a pagar R$: ${valor.toFixed(2)}`
+        
+        e.preventDefault()
+    })
+   </script>
+</body>
+</html>
