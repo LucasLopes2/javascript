@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script</title>
+</head>
+<body>
+  <h1>Where are you from?</h1>
+  Qual país você mora? <input type="text" name="p" id="pais">
+  <input type="button" value="Verificar" onclick="ps()">
+  <h3 id="res1"></h3>
+  <h3 id="res2"></h3>
+  <h3 id="res3"></h3>
+<script>
+    function ps(){
+    var pais = 'Brasil'
+    var res1 = document.querySelector("#res1")
+   var res2 = document.querySelector("#res2")
+   var res3 = document.querySelector("#res3")
+   res1.innerHTML = `Você mora em ${pais}`
+   if(pais == 'Brasil'){
+    res2.innerHTML = `Você é Brasileiro!`
+   }else{
+    res3.innerHTML = `Você é Estrangeiro!`
+   }
+}
+</script>
+  
+    
+</body>
+</html>
