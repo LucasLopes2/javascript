@@ -1,0 +1,25 @@
+@charset "utf-8";
+body{
+    text-align: center;
+    background-color: cadetblue;
+}
+section{
+width: 400px;
+background-color: white;
+margin: auto;
+border-radius: 10px;
+padding: 15px;
+font-weight: bolder;
+}
+p.bt input{
+    padding: 5px;
+    width: 50%;
+    font-weight: bold;
+    background-color: aquamarine;
+}
+p.bt input:hover{
+    background-color: rgb(13, 119, 119);
+}
+img{
+    border-radius: 50%;
+}
