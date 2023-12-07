@@ -18,7 +18,7 @@ if(inicio.value.length == 0 || end.value.length == 0 || passos.value.length == 0
     //CONTAGEM REGRESSIVA//
     }else{
         for(let c = i; c >= f; c -= p){
-            res.innerHTML += `${c} `
+            res.innerHTML -= `${c} `
         }
     }
   
