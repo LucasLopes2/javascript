@@ -1,17 +1,17 @@
 function tabuada(){
-    let txt = document.getElementById("txtn")
+    let num = document.getElementById("txtn")
     let tabu = document.getElementById("seltab")
-    if(txt.value.length == 0){
+    if(num.value.length == 0){
         alert("Por favor, digite um número!")
     }else{
-        var n = Number(txt.value)
-        var c = 1
-        tabu.innerHTML = ''
-    }while(c <= 10){
-        let item = document.createElement("option")
-        item.text = `${c} x ${n} = ${c*n}`
-        tabu.appendChild(item)
-        c++
-        
+        let n = Number(num.value)
+        let c = 1
+       tabu.innerHTML = ""
+        while(c <=10){
+            let item = document.createElement("option")
+            item.text = `${n} x ${c} = ${n*c} `
+            tabu.appendChild(item)
+            c++
+        }
     }
 }
